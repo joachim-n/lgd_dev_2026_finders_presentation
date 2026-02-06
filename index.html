@@ -117,28 +117,49 @@ Creating a Finder entity creates:
 - View of search index items
 
 ---
-diagram!
+Creating a basic Finder entity creates:
+
+![diagram](assets/finders-setup-basic.png)
 
 ---
-4. Extensions: events
+### Extensions: events
 
----
-4. Extensions: facets
+Finders Events contrib module
 
----
-Events Finder type
+Events Finder type plugin:
 
-Provided by Finders Events module.
+* Recurring date field
+* Two views shown in channels (optionally)
+  * list
+  * calendar
 
 ---
 Creating an Events Finder entity creates:
+
 - Bundle fields:
-- Channel reference field
-- Channel item types
-- Title sort
-- View field
+  - Channel reference field
+  - Channel item types
+  - Title sort
+  - View field x 2
+  - Date recur field
 - Search index
 - View of search index items
+- Calendar view of search index items
+
+---
+Creating an Events Finder entity creates:
+
+![diagram](assets/finders-setup-events.png)
+
+---
+### Extensions: facets
+
+Finders Facets module, included in Finders
+
+When a Finder is created, creates:
+
+* A facet for each view the Finder is creating
+* A block for each facet
 
 ---
 Create event channel
